@@ -1,5 +1,9 @@
-print("=" * 50)
-print("      Welcome to Sales Analytics System")
-print("=" * 50)
+import csv
 
-print("Project Created Successfully!")
+file = open("Data/sales.csv", "r")
+reader =csv.reader(file)
+
+for row in reader:
+    print(row)
+
+file.close()
